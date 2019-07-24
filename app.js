@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+require('./bin/db');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist/formapp')));
 
 app.use('/api/', indexRouter);
-app.use('/api/users', usersRouter);
+app.use('/api/user', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -35,7 +35,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  
 });
 
 module.exports = app;

@@ -1,0 +1,117 @@
+<body>
+    <div class="container">    
+            
+        <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Register for Survey Form</div>
+                    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="/accounts/login/"></a></div>
+                </div>  
+                <div class="panel-body" >
+                    <form method="post" action=".">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+                                
+    
+                       
+                           
+                            <div id="div_id_username" class="form-group required">
+                                <label for="id_username" class="control-label col-md-4  requiredField">
+                                    <span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 ">
+                                    <input class="input-md  textinput textInput form-control" [(ngModel)]="name" id="id_username" maxlength="30" name="username" placeholder="नाम" style="margin-bottom: 10px" type="text" />
+                                </div>
+                            </div>
+                            <!-- <div id="div_id_email" class="form-group required">
+                                <label for="id_email" class="control-label col-md-4  requiredField"> E-mail<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 ">
+                                    <input class="input-md emailinput form-control" id="id_email" [(ngModel)]="email" name="email" placeholder="Your current email address" style="margin-bottom: 10px" type="email" />
+                                </div>     
+                            </div> -->
+                            <div id="div_id_password1" class="form-group required">
+                                <label for="id_password1" class="control-label col-md-4  requiredField">
+                                    दिनांक<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 "> 
+                                    <input class="input-md textinput textInput form-control" [(ngModel)]="date" id="id_password1" name="password1" placeholder="दिनांक" style="margin-bottom: 10px" type="date" />
+                                </div>
+                            </div>
+                            <div id="div_id_password2" class="form-group required">
+                                 <label for="id_password2" class="control-label col-md-4  requiredField"> जन्म की तारीख<span class="asteriskField">*</span> </label>
+                                 <div class="controls col-md-8 ">
+                                    <input class="input-md textinput textInput form-control" [(ngModel)]="dob" id="id_password2" name="password2" placeholder="जन्म की तारीख" style="margin-bottom: 10px" type="date" />
+                                </div>
+                            </div>
+                            <!-- <div id="div_id_name" class="form-group required"> 
+                                <label for="id_name" class="control-label col-md-4  requiredField"> full name<span class="asteriskField">*</span> </label> 
+                                <div class="controls col-md-8 "> 
+                                    <input class="input-md textinput textInput form-control" id="id_name" name="name" placeholder="Your Frist name and Last name" style="margin-bottom: 10px" type="text" />
+                                </div>
+                            </div> -->
+                            <div id="div_id_gender" class="form-group required">
+                                <label for="id_gender"  class="control-label col-md-4  requiredField"> 
+                                    लिंग<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                                     <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_1" value="Male" [(ngModel)]="sex"  style="margin-bottom: 10px">
+                                        पुरुष</label>
+                                     <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="Female"  [(ngModel)]="sex" style="margin-bottom: 10px">
+                                        महिला </label>
+                                </div>
+                            </div>
+                            <div id="div_id_company" class="form-group required"> 
+                                <label for="id_company" class="control-label col-md-4  requiredField"> शिक्षा कौशल<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 "> 
+                                     <input class="input-md textinput textInput form-control" id="id_company" name="company" [(ngModel)]="education" placeholder="शिक्षा कौशल" style="margin-bottom: 10px" type="text" />
+                                </div>
+                            </div> 
+                            <div id="div_id_catagory" class="form-group required">
+                                <label for="id_catagory" class="control-label col-md-4  requiredField"> 
+                                    व्यवसाय<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 "> 
+                                     <input class="input-md textinput textInput form-control" id="id_catagory" [(ngModel)]="profession" name="catagory" placeholder=" व्यवसाय" style="margin-bottom: 10px" type="text" />
+                                </div>
+                            </div> 
+                            <div id="div_id_number" class="form-group required">
+                                 <label for="id_number" class="control-label col-md-4  requiredField">
+                                    संपर्क संख्या<span class="asteriskField">*</span> </label>
+                                 <div class="controls col-md-8 ">
+                                     <input class="input-md textinput textInput form-control" id="id_number" [(ngModel)]="number" name="number" placeholder="
+                                     संपर्क संख्या" style="margin-bottom: 10px" type="text" />
+                                </div> 
+                            </div> 
+                            <div id="div_id_location" class="form-group required">
+                                <label for="id_location" class="control-label col-md-4  requiredField"> 
+                                    वैवाहिक स्थिति<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 ">
+                                    <label class="radio-inline"> <input type="radio" name="mar" id="id_gender_1" [(ngModel)]="maried" value="Married"  style="margin-bottom: 10px">
+                                        विवाहित </label>
+                                    <label class="radio-inline"> <input type="radio" name="mar" id="id_gender_2" [(ngModel)]="maried" value="UnMarried"  style="margin-bottom: 10px">
+                                        अविवाहित </label>
+                                    <label class="radio-inline"> <input type="radio" name="mar" id="id_gender_2" [(ngModel)]="maried" value="Widow"  style="margin-bottom: 10px">विधवा </label>
+                                    <label class="radio-inline"> <input type="radio" name="mar" id="id_gender_2" [(ngModel)]="maried" value="Divorced"  style="margin-bottom: 10px">तलाकशुदा </label>
+                                </div> 
+                            </div>
+                            <div id="div_id_location" class="form-group required">
+                                <label for="id_location" class="control-label col-md-4  requiredField"> क्षेत्र<span class="asteriskField">*</span> </label>
+                                <div class="controls col-md-8 ">
+                                    <label class="radio-inline"> <input type="radio" name="areaa" id="id_gender_2" [(ngModel)]="area" value="City"  style="margin-bottom: 10px">शहर </label>
+                                    <label class="radio-inline"> <input type="radio" name="areaa" id="id_gender_2" [(ngModel)]="area" value="semi-urban"  style="margin-bottom: 10px">
+                                        अर्ध शहरी </label>
+                                    <label class="radio-inline"> <input type="radio" name="areaa" id="id_gender_2" [(ngModel)]="area" value="rural"  style="margin-bottom: 10px">ग्रामीण </label>
+                                </div> 
+                            </div>
+                           
+                            <div class="form-group"> 
+                                <div class="aab controls col-md-4 "></div>
+                                <div class="controls col-md-8 ">
+                                    <input type="button" (click)="registerSurvey()"   name="Signup" value="Ready for Survay" class="btn btn-primary btn btn-info" id="submit-id-signup" />
+                                   
+                                </div>
+                            </div> 
+                                
+                        
+    
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
