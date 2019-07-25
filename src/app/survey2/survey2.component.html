@@ -1,0 +1,145 @@
+<body   >
+    <div class="container-fluid">
+      <h1>मानसिक स्वास्थ्य परीक्षण उपकरण</h1>
+      <div>
+        <p>
+          इस प्रश्नावली को आपके मानसिक स्वास्थ्य और दैनिक जीवन के विभिन्न पहलुओं को देखने के लिए बनाया गया है। निम्नलिखित प्रशनो को ध्यान से पढ़ें और "हाँ" या "नहीं" में उत्तर दे, जो भी पिछले 6 हफ्तों में आपकी स्थिति का सटीक वर्णन करता है। कोई सही या गलत उत्तर नहीं हैं। “हाँ” या “नहीं” में से जो आपको ठीक लगता है, उसपर निशान लगाए |
+        </p>
+      </div>
+      <br>
+<form [formGroup]="Survey2Form">
+      <table  class="table table-striped table-inverse table-responsive" >
+        <thead class="thead-inverse">
+        <tr>
+          <th>क्र. सं.</th>
+          <th class="question">प्रश्न</th> 
+          <th class="align">प्रतिक्रिया</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1.</td>
+          <td class="hello">क्या आपको रोज़ की ज़िन्दगी में/ रोज़ के काम में ख़ुशी नहीं मिलती?</td> 
+          <td>
+            <div class="form-check">
+               
+              <mat-radio-group  formControlName="q1" aria-label="Select an option">
+                <mat-radio-button value="1">हाँ</mat-radio-button>
+                <mat-radio-button value="0">नहीं</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>2.</td>
+          <td class="hello"> क्या आपको कभी लगता है कि टीबी के डर के कारण आपके पड़ोसी / रिश्तेदार आपसे बात करने को तैयार नहीं हैं?</td> 
+          <td> 
+            <mat-radio-group formControlName="q2" aria-label="Select an option">
+            <mat-radio-button value="1">हाँ</mat-radio-button>
+            <mat-radio-button value="0">नहीं</mat-radio-button>
+          </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>3.</td>
+          <td class="hello">क्या आप इस डर के कारण लोगों से मिलने से बचते हैं कि आप टीबी फैला सकते हैं?</td>
+          <td>
+              <mat-radio-group formControlName="q3" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>4.</td>
+          <td class="hello">क्या आपको कभी लगता है कि आप अपने परिवार पर बोझ हैं या आप टीबी की वजह से कुछ हासिल नहीं कर पाएंगे?</td>
+          <td>
+              <mat-radio-group formControlName="q4" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>5.</td>
+          <td class="hello">क्या आप लगातार ठीक न हो पाने की चिंता करते हैं?</td>
+          <td> 
+              <mat-radio-group formControlName="q5" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+        </tr>
+      <br>
+        <tr>
+          <td>6.</td>
+          <td class="hello">क्या आप ऐसी सोच व ख्याल रखते हैं जो अन्य लोगों को अजीब/असामान्य या विचित्र लगती हैं?</td>
+          <td>
+              <mat-radio-group formControlName="q6" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>7.</td>
+          <td class="hello">क्या आपको अजीब आवाजें सुनाई देती हैं या अजीब चीज़ें दिखती हैं जो अन्य लोग नहीं सुन/देख सकते हैं या नहीं सुनते/देखते हैं?</td>
+          <td>
+              <mat-radio-group formControlName="q7" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>8.</td>
+          <td class="hello">क्या आप शराब का सेवन / धूम्रपान (सिगरेट , तंबाकू या अन्य हानिकारक दवा का दुरुपयोग) करते हैं?</td>
+          <td>
+              <mat-radio-group formControlName="q8" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>9.</td>
+          <td class="hello">यदि हाँ, तो क्या आप इसे (पदार्थ) अक्सर बेहतर महसूस करने या तनाव कम करने के लिए उपयोग करते हैं?</td>
+          <td>
+              <mat-radio-group formControlName="q9" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>10.</td>
+          <td class="hello">क्या आपको इन समस्याओं के कारण रोज़ की ज़िन्दगी में परेशानी या मुश्किल लगती हैं? </td>
+          <td>
+              <mat-radio-group formControlName="q10" aria-label="Select an option">
+                  <mat-radio-button value="1">हाँ</mat-radio-button>
+                  <mat-radio-button value="0">नहीं</mat-radio-button>
+                </mat-radio-group>
+          </td>
+        </tr>
+        <br>
+    </tbody>
+      </table>
+      <div>
+          <p class="para">
+            <!-- यदि आपने उपरोक्त दिए गए प्रशनो में से किसी दो पर "हाँ" कहा है, तो आपको एक योग्य मानसिक स्वास्थ्य चिकित्सक मिलने की सलाह दी जाती है। -->
+            <button type="button" name="" id="" (click)="Survey2FormSubmit(Survey2Form.value)" class="btn btn-primary btn-lg btn-block">Save</button>
+        </p>
+      </div>
+
+    </form>
+    </div>
+  </body>
+

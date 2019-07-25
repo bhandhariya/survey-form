@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as SurveyEditor from 'surveyjs-editor';
 import * as Survey from 'survey-angular';
-import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import {map} from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
@@ -25,7 +25,7 @@ export class SurveyComponent implements OnInit {
       
 }
   UserID: Observable<string>;
-  constructor(private route:ActivatedRoute,private http:HttpClient) { 
+  constructor(private route:ActivatedRoute,private http:HttpClient,private arout:Router) { 
     // this.UserID=this.route.snapshot.paramMap.get('id')
    this.route.paramMap.subscribe(r=>{
      
@@ -47,7 +47,7 @@ export class SurveyComponent implements OnInit {
       { value: 2, text: "सदैव"},
       { value: 1, text: "कभी कभी"},
       { value: 0, text: "कभी नहीं"}
-          ]}
+          ],isRequired:true}
     ]
     },
     {
@@ -58,18 +58,18 @@ export class SurveyComponent implements OnInit {
         { value: 2, text: "सदैव"},
         { value: 1, text: "कभी कभी"},
         { value: 0, text: "कभी नहीं"}
-            ]}
+            ],isRequired:true}
       ]
       },
       {
         name: "q3",
-        title: "ममैं अपने स्वस्थ्य के बारें मैं बहुत परेशान रहता/रहती हूँ ?",
+        title: "मैं अपने स्वस्थ्य के बारें मैं बहुत परेशान रहता/रहती हूँ ?",
         elements: [
         { type: "radiogroup",choices: [
           { value: 2, text: "सदैव"},
           { value: 1, text: "कभी कभी"},
           { value: 0, text: "कभी नहीं"}
-              ]}
+              ],isRequired:true}
         ]
         },
         {
@@ -80,18 +80,18 @@ export class SurveyComponent implements OnInit {
             { value: 2, text: "सदैव"},
             { value: 1, text: "कभी कभी"},
             { value: 0, text: "कभी नहीं"}
-                ]}
+                ],isRequired:true}
           ]
           },
           {
             name: "q5",
-            title: "ममुझे कब्ज की शिकायत रहती हैं ?",
+            title: "मुझे कब्ज की शिकायत रहती हैं ?",
             elements: [
             { type: "radiogroup",choices: [
               { value: 2, text: "सदैव"},
               { value: 1, text: "कभी कभी"},
               { value: 0, text: "कभी नहीं"}
-                  ]}
+                  ],isRequired:true}
             ]
             },
             {
@@ -102,7 +102,7 @@ export class SurveyComponent implements OnInit {
                 { value: 2, text: "सदैव"},
                 { value: 1, text: "कभी कभी"},
                 { value: 0, text: "कभी नहीं"}
-                    ]}
+                    ],isRequired:true}
               ]
               },
               {
@@ -113,7 +113,7 @@ export class SurveyComponent implements OnInit {
                   { value: 2, text: "सदैव"},
                   { value: 1, text: "कभी कभी"},
                   { value: 0, text: "कभी नहीं"}
-                      ]}
+                      ],isRequired:true}
                 ]
                 },
                 {
@@ -124,7 +124,7 @@ export class SurveyComponent implements OnInit {
                     { value: 2, text: "सदैव"},
                     { value: 1, text: "कभी कभी"},
                     { value: 0, text: "कभी नहीं"}
-                        ]}
+                        ],isRequired:true}
                   ]
                   },
                   {
@@ -135,7 +135,7 @@ export class SurveyComponent implements OnInit {
                       { value: 2, text: "सदैव"},
                       { value: 1, text: "कभी कभी"},
                       { value: 0, text: "कभी नहीं"}
-                          ]}
+                          ],isRequired:true}
                     ]
                     },
                     {
@@ -146,7 +146,7 @@ export class SurveyComponent implements OnInit {
                         { value: 2, text: "सदैव"},
                         { value: 1, text: "कभी कभी"},
                         { value: 0, text: "कभी नहीं"}
-                            ]}
+                            ],isRequired:true}
                       ]
                       },
                       {
@@ -157,7 +157,7 @@ export class SurveyComponent implements OnInit {
                           { value: 2, text: "सदैव"},
                           { value: 1, text: "कभी कभी"},
                           { value: 0, text: "कभी नहीं"}
-                              ]}
+                              ],isRequired:true}
                         ]
                         },
                         {
@@ -168,7 +168,7 @@ export class SurveyComponent implements OnInit {
                             { value: 2, text: "सदैव"},
                             { value: 1, text: "कभी कभी"},
                             { value: 0, text: "कभी नहीं"}
-                                ]}
+                                ],isRequired:true}
                           ]
                           },
                           {
@@ -179,7 +179,7 @@ export class SurveyComponent implements OnInit {
                               { value: 2, text: "सदैव"},
                               { value: 1, text: "कभी कभी"},
                               { value: 0, text: "कभी नहीं"}
-                                  ]}
+                                  ],isRequired:true}
                             ]
                             },
                             {
@@ -190,7 +190,7 @@ export class SurveyComponent implements OnInit {
                                 { value: 2, text: "सदैव"},
                                 { value: 1, text: "कभी कभी"},
                                 { value: 0, text: "कभी नहीं"}
-                                    ]}
+                                    ],isRequired:true}
                               ]
                               },
                               {
@@ -201,7 +201,7 @@ export class SurveyComponent implements OnInit {
                                   { value: 2, text: "सदैव"},
                                   { value: 1, text: "कभी कभी"},
                                   { value: 0, text: "कभी नहीं"}
-                                      ]}
+                                      ],isRequired:true}
                                 ]
                                 },{
                                   name: "q16",
@@ -211,7 +211,7 @@ export class SurveyComponent implements OnInit {
                                     { value: 2, text: "सदैव"},
                                     { value: 1, text: "कभी कभी"},
                                     { value: 0, text: "कभी नहीं"}
-                                        ]}
+                                        ],isRequired:true}
                                   ]
                                   },
                                   {
@@ -222,7 +222,7 @@ export class SurveyComponent implements OnInit {
                                       { value: 2, text: "सत्य"},
                                       { value: 1, text: "कुछ कुछ सत्य"},
                                       { value: 0, text: "असत्य"}
-                                          ]}
+                                          ],isRequired:true}
                                     ]
                                     },
                                     {
@@ -233,7 +233,7 @@ export class SurveyComponent implements OnInit {
                                         { value: 2, text: "सत्य"},
                                         { value: 1, text: "कुछ कुछ सत्य"},
                                         { value: 0, text: "असत्य"}
-                                            ]}
+                                            ],isRequired:true}
                                       ]
                                       },
                                       {
@@ -244,7 +244,7 @@ export class SurveyComponent implements OnInit {
                                           { value: 2, text: "सत्य"},
                                           { value: 1, text: "कुछ कुछ सत्य"},
                                           { value: 0, text: "असत्य"}
-                                              ]}
+                                              ],isRequired:true}
                                         ]
                                         },
                                         {
@@ -255,7 +255,7 @@ export class SurveyComponent implements OnInit {
                                             { value: 2, text: "सत्य"},
                                             { value: 1, text: "कुछ कुछ सत्य"},
                                             { value: 0, text: "असत्य"}
-                                                ]}
+                                                ],isRequired:true}
                                           ]
                                           },{
                                             name: "q21",
@@ -265,7 +265,7 @@ export class SurveyComponent implements OnInit {
                                               { value: 2, text: "सत्य"},
                                               { value: 1, text: "कुछ कुछ सत्य"},
                                               { value: 0, text: "असत्य"}
-                                                  ]}
+                                                  ],isRequired:true}
                                             ]
                                             },{
                                               name: "q22",
@@ -275,7 +275,7 @@ export class SurveyComponent implements OnInit {
                                                 { value: 2, text: "सत्य"},
                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                 { value: 0, text: "असत्य"}
-                                                    ]}
+                                                    ],isRequired:true}
                                               ]
                                               },{
                                                 name: "q23",
@@ -285,7 +285,7 @@ export class SurveyComponent implements OnInit {
                                                   { value: 2, text: "सत्य"},
                                                   { value: 1, text: "कुछ कुछ सत्य"},
                                                   { value: 0, text: "असत्य"}
-                                                      ]}
+                                                      ],isRequired:true}
                                                 ]
                                                 },{
                                                   name: "q24",
@@ -295,7 +295,7 @@ export class SurveyComponent implements OnInit {
                                                     { value: 2, text: "सत्य"},
                                                     { value: 1, text: "कुछ कुछ सत्य"},
                                                     { value: 0, text: "असत्य"}
-                                                        ]}
+                                                        ],isRequired:true}
                                                   ]
                                                   },
                                                   {
@@ -306,7 +306,7 @@ export class SurveyComponent implements OnInit {
                                                       { value: 2, text: "सत्य"},
                                                       { value: 1, text: "कुछ कुछ सत्य"},
                                                       { value: 0, text: "असत्य"}
-                                                          ]}
+                                                          ],isRequired:true}
                                                     ]
                                                     },
                                                     {
@@ -317,7 +317,7 @@ export class SurveyComponent implements OnInit {
                                                         { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                            ]}
+                                                            ],isRequired:true}
                                                       ]
                                                       },
                                                       {
@@ -328,7 +328,7 @@ export class SurveyComponent implements OnInit {
                                                           { value: 2, text: "सत्य"},
                                                           { value: 1, text: "कुछ कुछ सत्य"},
                                                           { value: 0, text: "असत्य"}
-                                                              ]}
+                                                              ],isRequired:true}
                                                         ]
                                                         },
                                                         {
@@ -339,7 +339,7 @@ export class SurveyComponent implements OnInit {
                                                             { value: 2, text: "सत्य"},
                                                             { value: 1, text: "कुछ कुछ सत्य"},
                                                             { value: 0, text: "असत्य"}
-                                                                ]}
+                                                                ],isRequired:true}
                                                           ]
                                                           },
                                                           {
@@ -350,7 +350,7 @@ export class SurveyComponent implements OnInit {
                                                               { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                  ]}
+                                                                  ],isRequired:true}
                                                             ]
                                                             },
                                                             {
@@ -361,7 +361,7 @@ export class SurveyComponent implements OnInit {
                                                                 { value: 2, text: "सत्य"},
                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                 { value: 0, text: "असत्य"}
-                                                                    ]}
+                                                                    ],isRequired:true}
                                                               ]
                                                               },
                                                               {
@@ -372,7 +372,7 @@ export class SurveyComponent implements OnInit {
                                                                   { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                      ]}
+                                                                      ],isRequired:true}
                                                                 ]
                                                                 },
                                                                 {
@@ -383,7 +383,7 @@ export class SurveyComponent implements OnInit {
                                                                     { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                        ]}
+                                                                        ],isRequired:true}
                                                                   ]
                                                                   },
                                                                   {
@@ -394,7 +394,7 @@ export class SurveyComponent implements OnInit {
                                                                       { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                          ]}
+                                                                          ],isRequired:true}
                                                                     ]
                                                                     },
                                                                     {
@@ -405,7 +405,7 @@ export class SurveyComponent implements OnInit {
                                                                         { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                            ]}
+                                                                            ],isRequired:true}
                                                                       ]
                                                                       },
                                                                       {
@@ -416,7 +416,7 @@ export class SurveyComponent implements OnInit {
                                                                           { value: 2, text: "सत्य"},
                                                                           { value: 1, text: "कुछ कुछ सत्य"},
                                                                           { value: 0, text: "असत्य"}
-                                                                              ]}
+                                                                              ],isRequired:true}
                                                                         ]
                                                                         },
                                                                         {
@@ -427,7 +427,7 @@ export class SurveyComponent implements OnInit {
                                                                             { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                                ]}
+                                                                                ],isRequired:true}
                                                                           ]
                                                                           },
                                                                           {
@@ -438,7 +438,7 @@ export class SurveyComponent implements OnInit {
                                                                               { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                                  ]}
+                                                                                  ],isRequired:true}
                                                                             ]
                                                                             },
                                                                             {
@@ -449,7 +449,7 @@ export class SurveyComponent implements OnInit {
                                                                                 { value: 2, text: "सत्य"},
                                                                                 { value: 1, text: "कुछ कुछ सत्य"},
                                                                                 { value: 0, text: "असत्य"}
-                                                                                    ]}
+                                                                                    ],isRequired:true}
                                                                               ]
                                                                               }
                                                                                 ]
@@ -466,6 +466,7 @@ export class SurveyComponent implements OnInit {
   }
   firstSurveyCall=(dt)=>{
     console.log(dt);
+    this.arout.navigate(['survey2',{id:dt.user_id}])
   }
   
   

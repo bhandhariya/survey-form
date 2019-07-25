@@ -1,5 +1,6 @@
 var User=require('../model/user_model');
 var Survey=require('../model/survey_model');
+var Survey2=require('../model/survey_2_model')
 var mongoose=require('mongoose');
 
 exports.create=function(req,res){
@@ -80,4 +81,28 @@ survey.save(function(err,result){
     }
 })
 
+}
+
+exports.survey2=function(req,res){
+    var data=req.body;
+    var survey=new Survey2({
+        user_id:data.uid,
+        q1: data.q1,
+    q2: data.q2,
+    q3: data.q3,
+    q4: data.q4,
+    q5: data.q5,
+    q6: data.q6,
+    q7: data.q7,
+    q8: data.q8,
+    q9: data.q9,
+    q10: data.q10
+    })
+    survey.save(function(err,result){
+        if(!err && result){
+            res.send(result)
+        }else{
+            console.log(err)
+        }
+    })
 }
