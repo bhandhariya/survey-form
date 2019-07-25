@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 var UserSchema = new Schema({
    
     _id:{type:Schema.Types.ObjectId,required:true},
-    name:{type:Schema.Types.String},
-    number:{type:Schema.Types.Number},
+    name:{type:Schema.Types.String,required:true},
+    number:{type:Schema.Types.Number,required:true,unique:true},
     email:{type:Schema.Types.String},
     date:{type:Schema.Types.Date},
     dob:{type:Schema.Types.Date},

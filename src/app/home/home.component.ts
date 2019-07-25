@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +15,19 @@ export class HomeComponent implements OnInit {
   name;email;number;date;dob;sex;education;profession;maried;area;
   ngOnInit() {
   }
-  registerSurvey(){
+  SurverRegistrationForm=new FormGroup({
+      name:new FormControl('',Validators.required),
+      email:new FormControl(''),
+      number:new FormControl('',Validators.required),
+      date:new FormControl(''),
+      dob:new FormControl(''),
+      sex:new FormControl(''),
+      education:new FormControl(''),
+      profession:new FormControl(''),
+      maried:new FormControl(''),
+      area:new FormControl('')
+  })
+  registerSurvey(r){
     var obj={
       name:this.name,
       email:this.email,
@@ -26,8 +40,13 @@ export class HomeComponent implements OnInit {
       maried:this.maried,
       area:this.area
     }
-    console.log(obj)
-    this.http.post('/api/user/create',obj).subscribe(this.cb)
+    if(this.SurverRegistrationForm.valid){
+      console.log(r)
+      this.http.post('/api/user/create',r).subscribe(this.cb)  
+    }else{
+      Swal.fire('Name And Number are Required')
+    }
+
   }
 cb=(dt)=>{
   console.log(dt)

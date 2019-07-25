@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Numans');
 #surveyElement{
-    
+    font-size: 25px
 }
 html,body{
-background-image: url('../../assets/12895.jpg');
+background-image: url('../../assets/we-want-your-feedback-survey-260nw-1323212687.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -18,11 +18,15 @@ align-content: center;
 }
 
 .card{
-height: 370px;
+  background-color: #5DBCD2;
+height: 340px;
 margin-top: auto;
 margin-bottom: auto;
+margin: 5px;
+margin-left: 612px;   
 width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+text-decoration: tomato
+
 }
 
 .social_icon span{
@@ -89,12 +93,3 @@ color: white;
 .links a{
 margin-left: 4px;
 }
-.container {
-    opacity: 0.5;
-    filter: alpha(opacity=50); 
-  }
-  
-  .container:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-  }

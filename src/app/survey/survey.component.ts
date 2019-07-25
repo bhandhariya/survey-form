@@ -162,7 +162,7 @@ export class SurveyComponent implements OnInit {
                         },
                         {
                           name: "q12",
-                          title: "मेरी सांस फुल जाती हैं |",
+                          title: "मेरी साँस फुल जाती हैं |",
                           elements: [
                           { type: "radiogroup",choices: [
                             { value: 2, text: "सदैव"},
@@ -195,7 +195,7 @@ export class SurveyComponent implements OnInit {
                               },
                               {
                                 name: "q15",
-                                title: "मेरे शरीर में दर्द रहता हैं |",
+                                title: "मेरे शरीर में दर्द होता हैं |",
                                 elements: [
                                 { type: "radiogroup",choices: [
                                   { value: 2, text: "सदैव"},
@@ -279,7 +279,7 @@ export class SurveyComponent implements OnInit {
                                               ]
                                               },{
                                                 name: "q23",
-                                                title: "मैं थोड़ी-सी नुक्ताचीनी(आलोचना) बहुत परेशान हो जाता/जाती हूँ  |",
+                                                title: "मै थोड़ी सी नुक्ताचीनी (आलोचना) से बहुत परेशान हो जाता/जाती हूँ |",
                                                 elements: [
                                                 { type: "radiogroup",choices: [
                                                   { value: 2, text: "सत्य"},
@@ -388,7 +388,7 @@ export class SurveyComponent implements OnInit {
                                                                   },
                                                                   {
                                                                     name: "q33",
-                                                                    title: "मैं शीघ्र चिडचिडा जाता/जाती हूँ|",
+                                                                    title: "मैं शीघ्र चिड़चिड़ा जाता/जाती हूँ|",
                                                                     elements: [
                                                                     { type: "radiogroup",choices: [
                                                                       { value: 2, text: "सत्य"},
