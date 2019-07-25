@@ -35,4 +35,7 @@ cb=(dt)=>{
     this.router.navigate(['survey',{id:dt._id}])
   }
 }
+adminLogin(){
+  this.router.navigate(['admin']) 
+}
 }
