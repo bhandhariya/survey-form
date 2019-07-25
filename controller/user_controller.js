@@ -106,3 +106,13 @@ exports.survey2=function(req,res){
         }
     })
 }
+
+exports.getAllUSers=function(req,res){
+    User.find().populate('SureveyDetails').populate('Surevey2Details').exec(function(err,user){
+        if(!err && user){
+            res.send(user)
+        }else{
+            console.log(err)
+        }
+    })
+}

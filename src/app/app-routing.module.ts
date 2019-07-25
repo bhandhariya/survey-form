@@ -7,6 +7,7 @@ import { Survey2Component } from './survey2/survey2.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  { path : 'admin', loadChildren : './admin/admin.module#AdminModule'},
   {path:'survey',component:SurveyComponent},
   {path:'survey2',component:Survey2Component}
 ];
