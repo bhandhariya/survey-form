@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-  var mongoURI = "mongodb://localhost:27017/Form-app-1";
+ // var mongoURI = "mongodb://localhost:27017/Form-app-1";
 
 // var mongoURI = "mongodb://raja:mentcom123@ds147096.mlab.com:47096/digitalapp";
 
@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 
 //var mongoURI = "mongodb://rajasaini:digital123@ds341847.mlab.com:41847/newdigitalapp";
 
+var mongoURI="mongodb://jasjeet:Jasjeet123@ds353957.mlab.com:53957/survey"
 
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoURI,{useNewUrlParser:true})
