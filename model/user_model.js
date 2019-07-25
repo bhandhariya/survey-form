@@ -29,4 +29,12 @@ UserSchema.virtual('SureveyDetails',{
 })
 
 
+UserSchema.virtual('Surevey2Details',{
+    ref:'Survey2',
+    localField: '_id',
+    foreignField: 'user_id',
+    justOne: false
+})
+
+
 module.exports = mongoose.model('User', UserSchema);
