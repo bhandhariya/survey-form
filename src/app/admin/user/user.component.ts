@@ -41,4 +41,11 @@ getTotal(r){
     return i;
   }
 }
+getsecondSureyDetails(r){
+  console.log(r)
+  if(r.q1){
+    var i=(r.q1+r.q2+r.q3+r.q4+r.q5+r.q6+r.q7+r.q8+r.q9+r.q10);
+  return i;
+  }
+}
 }

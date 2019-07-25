@@ -52,6 +52,8 @@ cb=(dt)=>{
   console.log(dt)
   if(dt._id){
     this.router.navigate(['survey',{id:dt._id}])
+  }else if(dt.code=11000){
+    Swal.fire('this Number Is Already Taken')
   }
 }
 adminLogin(){

@@ -22,7 +22,10 @@ exports.create=function(req,res){
     user.save(function(err,result){
         if(!err && result){
             res.send(result)
-        }else{
+        }else if(err.name === 'MongoError' && err.code === 11000){
+            res.send(err)
+        }
+        else{
             console.log(err)
         }
     })

@@ -8,7 +8,8 @@ var mongoose = require('mongoose');
 
 //var mongoURI = "mongodb://rajasaini:digital123@ds341847.mlab.com:41847/newdigitalapp";
 
-var mongoURI="mongodb://jasjeet:Jasjeet123@ds353957.mlab.com:53957/survey"
+var mongoURI="mongodb://jasjeet:jasjeet123@ds153947.mlab.com:53947/survey"
+
 
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoURI,{useNewUrlParser:true})
