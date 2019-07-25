@@ -41,7 +41,7 @@ export class SurveyComponent implements OnInit {
     pages: [
     {
     name: "q1",
-    title: "मैं बहुत जल्दी थक जाता/जाती हूं ?",
+    title: "मैं बहुत जल्दी थक जाता/जाती हूं |",
     elements: [
     { type: "radiogroup",choices: [
       { value: 2, text: "सदैव"},
@@ -52,7 +52,7 @@ export class SurveyComponent implements OnInit {
     },
     {
       name: "q2",
-      title: "मै अक्सर बीमार रहता/रहती हूं ?",
+      title: "मै अक्सर बीमार रहता/रहती हूं |",
       elements: [
       { type: "radiogroup",choices: [
         { value: 2, text: "सदैव"},
@@ -63,7 +63,7 @@ export class SurveyComponent implements OnInit {
       },
       {
         name: "q3",
-        title: "मैं अपने स्वस्थ्य के बारें मैं बहुत परेशान रहता/रहती हूँ ?",
+        title: "मैं अपने स्वस्थ्य के बारें मैं बहुत परेशान रहता/रहती हूँ |",
         elements: [
         { type: "radiogroup",choices: [
           { value: 2, text: "सदैव"},
@@ -74,7 +74,7 @@ export class SurveyComponent implements OnInit {
         },
         {
           name: "q4",
-          title: "मुझे भूख कम लगती है ?",
+          title: "मुझे भूख कम लगती है |",
           elements: [
           { type: "radiogroup",choices: [
             { value: 2, text: "सदैव"},
@@ -85,7 +85,7 @@ export class SurveyComponent implements OnInit {
           },
           {
             name: "q5",
-            title: "मुझे कब्ज की शिकायत रहती हैं ?",
+            title: "मुझे कब्ज़ की शिकायत रहती हैं |",
             elements: [
             { type: "radiogroup",choices: [
               { value: 2, text: "सदैव"},
@@ -96,7 +96,7 @@ export class SurveyComponent implements OnInit {
             },
             {
               name: "q6",
-              title: "मुझे अक्सर सिरदर्द रहता हैं  ?",
+              title: "मुझे अक्सर सिरदर्द रहता हैं  |",
               elements: [
               { type: "radiogroup",choices: [
                 { value: 2, text: "सदैव"},
@@ -107,7 +107,7 @@ export class SurveyComponent implements OnInit {
               },
               {
                 name: "q7",
-                title: "मुझे सर्दी झुकाम जल्दी हो जाता हैं  ?",
+                title: "मुझे सर्दी जुकाम जल्दी हो जाता हैं  |",
                 elements: [
                 { type: "radiogroup",choices: [
                   { value: 2, text: "सदैव"},
@@ -118,7 +118,7 @@ export class SurveyComponent implements OnInit {
                 },
                 {
                   name: "q8",
-                  title: "मुझे बार बार अपना गला साफ़ करना पड़ता हैं  ?",
+                  title: "मुझे बार बार अपना गला साफ़ करना पड़ता हैं  |",
                   elements: [
                   { type: "radiogroup",choices: [
                     { value: 2, text: "सदैव"},
@@ -129,7 +129,7 @@ export class SurveyComponent implements OnInit {
                   },
                   {
                     name: "q9",
-                    title: "मुझे प्र्राय चक्कर आते हैं ?",
+                    title: "मुझे प्रायः चक्कर आते हैं |",
                     elements: [
                     { type: "radiogroup",choices: [
                       { value: 2, text: "सदैव"},
@@ -140,7 +140,7 @@ export class SurveyComponent implements OnInit {
                     },
                     {
                       name: "q10",
-                      title: "मुझे बार बार पेशाब करने जाना पड़ता हैं  ?",
+                      title: "मुझे बार बार पेशाब करने जाना पड़ता हैं  |",
                       elements: [
                       { type: "radiogroup",choices: [
                         { value: 2, text: "सदैव"},
@@ -151,7 +151,7 @@ export class SurveyComponent implements OnInit {
                       },
                       {
                         name: "q11",
-                        title: "मुझे नींद देर से आती हैं  ?",
+                        title: "मुझे नींद देर से आती हैं  |",
                         elements: [
                         { type: "radiogroup",choices: [
                           { value: 2, text: "सदैव"},
@@ -162,7 +162,7 @@ export class SurveyComponent implements OnInit {
                         },
                         {
                           name: "q12",
-                          title: "मेरी सांस फुल जाती हैं ?",
+                          title: "मेरी सांस फुल जाती हैं |",
                           elements: [
                           { type: "radiogroup",choices: [
                             { value: 2, text: "सदैव"},
@@ -173,7 +173,7 @@ export class SurveyComponent implements OnInit {
                           },
                           {
                             name: "q13",
-                            title: "मेरा पेट अक्सर खराब रहता हैं ?",
+                            title: "मेरा पेट अक्सर खराब रहता हैं |",
                             elements: [
                             { type: "radiogroup",choices: [
                               { value: 2, text: "सदैव"},
@@ -184,7 +184,7 @@ export class SurveyComponent implements OnInit {
                             },
                             {
                               name: "q14",
-                              title: "मेरा दिल अक्सर जोर-जोर से धड़कने लगता हैं  ?",
+                              title: "मेरा दिल अक्सर जोर-जोर से धड़कने लगता हैं  |",
                               elements: [
                               { type: "radiogroup",choices: [
                                 { value: 2, text: "सदैव"},
@@ -195,7 +195,7 @@ export class SurveyComponent implements OnInit {
                               },
                               {
                                 name: "q15",
-                                title: "मेरे शरीर में दर्द रहता हैं ?",
+                                title: "मेरे शरीर में दर्द रहता हैं |",
                                 elements: [
                                 { type: "radiogroup",choices: [
                                   { value: 2, text: "सदैव"},
@@ -205,7 +205,7 @@ export class SurveyComponent implements OnInit {
                                 ]
                                 },{
                                   name: "q16",
-                                  title: "मेरी शौच में कीड़े निकलते हैं ?",
+                                  title: "मेरी शौच में कीड़े निकलते हैं |",
                                   elements: [
                                   { type: "radiogroup",choices: [
                                     { value: 2, text: "सदैव"},
@@ -216,7 +216,7 @@ export class SurveyComponent implements OnInit {
                                   },
                                   {
                                     name: "q17",
-                                    title: "मैं शर्मीले स्वभाव का/की हूँ ?",
+                                    title: "मैं शर्मीले स्वभाव का/की हूँ |",
                                     elements: [
                                     { type: "radiogroup",choices: [
                                       { value: 2, text: "सत्य"},
@@ -227,7 +227,7 @@ export class SurveyComponent implements OnInit {
                                     },
                                     {
                                       name: "q18",
-                                      title: "मैं बात का जल्दी बुरा मान जाता/जाती हूँ  ?",
+                                      title: "मैं बात का जल्दी बुरा मान जाता/जाती हूँ  |",
                                       elements: [
                                       { type: "radiogroup",choices: [
                                         { value: 2, text: "सत्य"},
@@ -238,7 +238,7 @@ export class SurveyComponent implements OnInit {
                                       },
                                       {
                                         name: "q19",
-                                        title: "मैं छोटी-छोटी बातों से घबरा जाता/जाती हूँ ?",
+                                        title: "मैं छोटी-छोटी बातों से घबरा जाता/जाती हूँ |",
                                         elements: [
                                         { type: "radiogroup",choices: [
                                           { value: 2, text: "सत्य"},
@@ -249,7 +249,7 @@ export class SurveyComponent implements OnInit {
                                         },
                                         {
                                           name: "q20",
-                                          title: "मैं बहुत चिंता करता/करती हूँ  ?",
+                                          title: "मैं बहुत चिंता करता/करती हूँ  |",
                                           elements: [
                                           { type: "radiogroup",choices: [
                                             { value: 2, text: "सत्य"},
@@ -259,7 +259,7 @@ export class SurveyComponent implements OnInit {
                                           ]
                                           },{
                                             name: "q21",
-                                            title: "मैं सामान्यतया: हर काम के लिए दूसरों की राय मांगता /मांगती हूँ ?",
+                                            title: "मैं सामान्यतया: हर काम के लिए दूसरों की राय मांगता /मांगती हूँ |",
                                             elements: [
                                             { type: "radiogroup",choices: [
                                               { value: 2, text: "सत्य"},
@@ -269,7 +269,7 @@ export class SurveyComponent implements OnInit {
                                             ]
                                             },{
                                               name: "q22",
-                                              title: "मैं किसी बात का जल्दी फैसला नहीं कर पता/पाती हूँ ?",
+                                              title: "मैं किसी बात का जल्दी फैसला नहीं कर पता/पाती हूँ |",
                                               elements: [
                                               { type: "radiogroup",choices: [
                                                 { value: 2, text: "सत्य"},
@@ -279,7 +279,7 @@ export class SurveyComponent implements OnInit {
                                               ]
                                               },{
                                                 name: "q23",
-                                                title: "मैं थोड़ी-सी नुक्ताचीनी(आलोचना) बहुत परेशान हो जाता/जाती हूँ  ?",
+                                                title: "मैं थोड़ी-सी नुक्ताचीनी(आलोचना) बहुत परेशान हो जाता/जाती हूँ  |",
                                                 elements: [
                                                 { type: "radiogroup",choices: [
                                                   { value: 2, text: "सत्य"},
@@ -289,7 +289,7 @@ export class SurveyComponent implements OnInit {
                                                 ]
                                                 },{
                                                   name: "q24",
-                                                  title: "अगर काम जल्दी करना हो तो मैं घबरा जाता/जाती हूँ ?",
+                                                  title: "अगर काम जल्दी करना हो तो मैं घबरा जाता/जाती हूँ |",
                                                   elements: [
                                                   { type: "radiogroup",choices: [
                                                     { value: 2, text: "सत्य"},
@@ -300,7 +300,7 @@ export class SurveyComponent implements OnInit {
                                                   },
                                                   {
                                                     name: "q25",
-                                                    title: "मैं जानबूझकर धीरे धीरे काम करता/करती हूँ ताकि काम गलत न हो जायें  ?",
+                                                    title: "मैं जानबूझकर धीरे धीरे काम करता/करती हूँ ताकि काम गलत न हो जायें  |",
                                                     elements: [
                                                     { type: "radiogroup",choices: [
                                                       { value: 2, text: "सत्य"},
@@ -311,7 +311,7 @@ export class SurveyComponent implements OnInit {
                                                     },
                                                     {
                                                       name: "q26",
-                                                      title: "मैं नए लोगो से मिलने या नयी जगह जाने से घबड़ा जाता/जाती हूँ  ?",
+                                                      title: "मैं नए लोगो से मिलने या नयी जगह जाने से घबड़ा जाता/जाती हूँ  |",
                                                       elements: [
                                                       { type: "radiogroup",choices: [
                                                         { value: 2, text: "सत्य"},
@@ -322,7 +322,7 @@ export class SurveyComponent implements OnInit {
                                                       },
                                                       {
                                                         name: "q27",
-                                                        title: "मैं अक्सर उदास रहता/रहती हूँ ?",
+                                                        title: "मैं अक्सर उदास रहता/रहती हूँ |",
                                                         elements: [
                                                         { type: "radiogroup",choices: [
                                                           { value: 2, text: "सत्य"},
@@ -333,7 +333,7 @@ export class SurveyComponent implements OnInit {
                                                         },
                                                         {
                                                           name: "q28",
-                                                          title: "मैं जल्दी से रो पड़ता/पड़ती हूँ?",
+                                                          title: "मैं जल्दी से रो पड़ता/पड़ती हूँ|",
                                                           elements: [
                                                           { type: "radiogroup",choices: [
                                                             { value: 2, text: "सत्य"},
@@ -344,7 +344,7 @@ export class SurveyComponent implements OnInit {
                                                           },
                                                           {
                                                             name: "q29",
-                                                            title: "में निराशा में हताश हो जाता/जाती हूँ ?",
+                                                            title: "में निराशा में हताश हो जाता/जाती हूँ |",
                                                             elements: [
                                                             { type: "radiogroup",choices: [
                                                               { value: 2, text: "सत्य"},
@@ -355,7 +355,7 @@ export class SurveyComponent implements OnInit {
                                                             },
                                                             {
                                                               name: "q30",
-                                                              title: "मैं जोर की आवाज से डर जाता/जाती हूँ  ?",
+                                                              title: "मैं जोर की आवाज से डर जाता/जाती हूँ  |",
                                                               elements: [
                                                               { type: "radiogroup",choices: [
                                                                 { value: 2, text: "सत्य"},
@@ -366,7 +366,7 @@ export class SurveyComponent implements OnInit {
                                                               },
                                                               {
                                                                 name: "q31",
-                                                                title: "अचानक कोई मेरे सामने आ जायें तो मैं घबड़ा जाता/जाती हूँ ?",
+                                                                title: "अचानक कोई मेरे सामने आ जायें तो मैं घबड़ा जाता/जाती हूँ |",
                                                                 elements: [
                                                                 { type: "radiogroup",choices: [
                                                                   { value: 2, text: "सत्य"},
@@ -377,7 +377,7 @@ export class SurveyComponent implements OnInit {
                                                                 },
                                                                 {
                                                                   name: "q32",
-                                                                  title: "किसी अफसर/बड़े आदमी के सामने मुझे पसीना आने लगता हैं  ?",
+                                                                  title: "किसी अफसर/बड़े आदमी के सामने मुझे पसीना आने लगता हैं  |",
                                                                   elements: [
                                                                   { type: "radiogroup",choices: [
                                                                     { value: 2, text: "सत्य"},
@@ -388,7 +388,7 @@ export class SurveyComponent implements OnInit {
                                                                   },
                                                                   {
                                                                     name: "q33",
-                                                                    title: "मैं शीघ्र चिडचिडा जाता/जाती हूँ?",
+                                                                    title: "मैं शीघ्र चिडचिडा जाता/जाती हूँ|",
                                                                     elements: [
                                                                     { type: "radiogroup",choices: [
                                                                       { value: 2, text: "सत्य"},
@@ -399,7 +399,7 @@ export class SurveyComponent implements OnInit {
                                                                     },
                                                                     {
                                                                       name: "q34",
-                                                                      title: "मुझे गुस्सा जल्दी आता हैं ?",
+                                                                      title: "मुझे गुस्सा जल्दी आता हैं |",
                                                                       elements: [
                                                                       { type: "radiogroup",choices: [
                                                                         { value: 2, text: "सत्य"},
@@ -410,7 +410,7 @@ export class SurveyComponent implements OnInit {
                                                                       },
                                                                       {
                                                                         name: "q35",
-                                                                        title: "मुझे अँधेरे से डर लगता हैं?",
+                                                                        title: "मुझे अँधेरे से डर लगता हैं|",
                                                                         elements: [
                                                                         { type: "radiogroup",choices: [
                                                                           { value: 2, text: "सत्य"},
@@ -421,7 +421,7 @@ export class SurveyComponent implements OnInit {
                                                                         },
                                                                         {
                                                                           name: "q36",
-                                                                          title: "मुझे डरावने स्वप्न आते हैं ?",
+                                                                          title: "मुझे डरावने स्वप्न आते हैं |",
                                                                           elements: [
                                                                           { type: "radiogroup",choices: [
                                                                             { value: 2, text: "सत्य"},
@@ -432,7 +432,7 @@ export class SurveyComponent implements OnInit {
                                                                           },
                                                                           {
                                                                             name: "q37",
-                                                                            title: "मुझे जिंदगी बेकार (फिजूल) लगती हैं ?",
+                                                                            title: "मुझे जिंदगी बेकार (फिजूल) लगती हैं |",
                                                                             elements: [
                                                                             { type: "radiogroup",choices: [
                                                                               { value: 2, text: "सत्य"},
@@ -443,7 +443,7 @@ export class SurveyComponent implements OnInit {
                                                                             },
                                                                             {
                                                                               name: "q38",
-                                                                              title: "ऐसी जिंदगी से तो मौत अच्छी हैं ?",
+                                                                              title: "ऐसी जिंदगी से तो मौत अच्छी हैं |",
                                                                               elements: [
                                                                               { type: "radiogroup",choices: [
                                                                                 { value: 2, text: "सत्य"},

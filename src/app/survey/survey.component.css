@@ -1,7 +1,9 @@
 /* Made with love by Mutiullah Samim*/
 
 @import url('https://fonts.googleapis.com/css?family=Numans');
-
+#surveyElement{
+    
+}
 html,body{
 background-image: url('../../assets/12895.jpg');
 background-size: cover;
@@ -87,3 +89,12 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+.container {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+  }
+  
+  .container:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
