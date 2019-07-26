@@ -20,7 +20,7 @@ export class AdminComponent implements OnInit {
   })
   LoginFormSubmit(form){
     console.log(form);
-    if(form.username=="jasjeet" && form.password=="pass"){
+    if(form.username=="opasha" && form.password=="tulasi123"){
       sessionStorage.setItem('IsLogin','true');
       this.router.navigateByUrl('admin/home')
     }else{
