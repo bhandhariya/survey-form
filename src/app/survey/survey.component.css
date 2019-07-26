@@ -5,7 +5,7 @@
     font-size: 25px
 }
 html,body{
-background-image: url('../../assets/we-want-your-feedback-survey-260nw-1323212687.jpg');
+/* background-image: url('../../assets/we-want-your-feedback-survey-260nw-1323212687.jpg'); */
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -18,12 +18,11 @@ align-content: center;
 }
 
 .card{
-  background-color: #5DBCD2;
+background-color: #5DBCD2;
 height: 340px;
 margin-top: auto;
 margin-bottom: auto;
-margin: 5px;
-margin-left: 612px;   
+
 width: 400px;
 text-decoration: tomato
 
