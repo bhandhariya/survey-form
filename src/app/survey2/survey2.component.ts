@@ -48,7 +48,7 @@ export class Survey2Component implements OnInit {
     this.result=JSON.parse(dt.q1)+JSON.parse(dt.q2)+JSON.parse(dt.q3)+JSON.parse(dt.q4)+JSON.parse(dt.q5)+JSON.parse(dt.q6)+JSON.parse(dt.q7)+JSON.parse(dt.q8)+JSON.parse(dt.q9)+JSON.parse(dt.q10);
     
     if(this.result>1){
-      Swal.fire('आपको एक योग्य मानसिक स्वास्थ्य चिकित्सक मिलने की सलाह दी जाती है।')
+      Swal.fire('आपको एक योग्य मानसिक स्वास्थ्य चिकित्सक से मिलने की सलाह दी जाती है।')
       this.Survey2Form.reset({})
       this.router.navigate([''])
     }else{
