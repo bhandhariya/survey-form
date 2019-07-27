@@ -8,27 +8,32 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of data" >
-                <td scope="row">{{item.name}}</td>
+                <td (click)="srurveyDetails(item._id)" scope="row">{{item.name}}</td>
                 <td>
-                    12
-                    <!-- <table>
+                    
+                    <table>
                         <tr>
-                            <th>Part First </th>
-                            <th>Part Second </th>
+                            <th>Part A </th>
+                            <th>Part B </th>
                             <th>total</th>
                         </tr>
                         <tr>
-                            <td>{{getFirstSectionResult(item.SureveyDetails[0])}}</td>
-                            <td>{{getSecondSectionResult(item.SureveyDetails[0])}}</td>
-                            <td>{{getTotal(item.SureveyDetails[0])}}</td>
+                            <td> {{item.SureveyDetails[0].question1+item.SureveyDetails[0].question2+item.SureveyDetails[0].question3+item.SureveyDetails[0].question4+item.SureveyDetails[0].question5+item.SureveyDetails[0].question6+item.SureveyDetails[0].question7+item.SureveyDetails[0].question8+item.SureveyDetails[0].question9+item.SureveyDetails[0].question10+item.SureveyDetails[0].question11+item.SureveyDetails[0].question12+item.SureveyDetails[0].question13+item.SureveyDetails[0].question14+item.SureveyDetails[0].question15+item.SureveyDetails[0].question16}} </td>
+                            <td>{{item.SureveyDetails[0].question17+item.SureveyDetails[0].question18+item.SureveyDetails[0].question19+item.SureveyDetails[0].question20+item.SureveyDetails[0].question21++item.SureveyDetails[0].question22+item.SureveyDetails[0].question23+item.SureveyDetails[0].question24+item.SureveyDetails[0].question25+item.SureveyDetails[0].question26+item.SureveyDetails[0].question27+item.SureveyDetails[0].question28+item.SureveyDetails[0].question29+item.SureveyDetails[0].question30+item.SureveyDetails[0].question31+item.SureveyDetails[0].question32+item.SureveyDetails[0].question33+item.SureveyDetails[0].question34+item.SureveyDetails[0].question35+item.SureveyDetails[0].question36+item.SureveyDetails[0].question37+item.SureveyDetails[0].question38}}</td>
+                            <td>{{item.SureveyDetails[0].question1+item.SureveyDetails[0].question2+item.SureveyDetails[0].question3+item.SureveyDetails[0].question4+item.SureveyDetails[0].question5+item.SureveyDetails[0].question6+item.SureveyDetails[0].question7+item.SureveyDetails[0].question8+item.SureveyDetails[0].question9+item.SureveyDetails[0].question10+item.SureveyDetails[0].question11+item.SureveyDetails[0].question12+item.SureveyDetails[0].question13+item.SureveyDetails[0].question14+item.SureveyDetails[0].question15+item.SureveyDetails[0].question16+item.SureveyDetails[0].question17+item.SureveyDetails[0].question18+item.SureveyDetails[0].question19+item.SureveyDetails[0].question20+item.SureveyDetails[0].question21++item.SureveyDetails[0].question22+item.SureveyDetails[0].question23+item.SureveyDetails[0].question24+item.SureveyDetails[0].question25+item.SureveyDetails[0].question26+item.SureveyDetails[0].question27+item.SureveyDetails[0].question28+item.SureveyDetails[0].question29+item.SureveyDetails[0].question30+item.SureveyDetails[0].question31+item.SureveyDetails[0].question32+item.SureveyDetails[0].question33+item.SureveyDetails[0].question34+item.SureveyDetails[0].question35+item.SureveyDetails[0].question36+item.SureveyDetails[0].question37+item.SureveyDetails[0].question38}}</td>
                         </tr>
-                    </table> -->
+                    </table>
                 </td>
-                <td>
-                    <!-- {{getsecondSureyDetails(item.Surevey2Details[0])}} -->
-                    5
+                <td >
+                        <div  >
+                                {{item.Surevey2Details[0].q1+item.Surevey2Details[0].q2+item.Surevey2Details[0].q3+item.Surevey2Details[0].q4+item.Surevey2Details[0].q5+item.Surevey2Details[0].q6+item.Surevey2Details[0].q7+item.Surevey2Details[0].q8+item.Surevey2Details[0].q9+item.Surevey2Details[0].q10}}
+
+                        </div>                    
                 </td>
             </tr>
            
         </tbody>
 </table>
+<ng-template #s2q1>
+    <td>Survey not Done</td>
+</ng-template>

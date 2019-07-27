@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -8,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserComponent implements OnInit {
   data;
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private router:Router) { }
 
   ngOnInit() {
     this.getAllUsersData()
@@ -19,6 +20,10 @@ getAllUsersData(){
 cb=(dt)=>{
   console.log(dt)
   this.data=dt;
+}
+srurveyDetails(r){
+  console.log(r)
+  this.router.navigate(['admin/survey',{uid:r}])
 }
 getFirstSectionResult(r){
   console.log(r)

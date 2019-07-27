@@ -1,0 +1,269 @@
+<table class="table table-hover table-inverse" *ngIf="data" >
+    <thead class="thead-inverse">
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Date</th>
+            <th>Date of Birth</th>
+            <th>Education</th>
+            <th>Profession</th>
+            <th>sex</th>
+            <th>area</th>
+            <th>Marital Status</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">{{data.name}}</td>
+                <td>{{data.number}}</td>
+                <td>{{data.date | date}}</td>
+                <td>{{data.dob | date}}</td>
+                <td>{{data.education}}</td>
+                <td>{{data.profession}}</td>
+                <td>{{data.sex}}</td>
+                <td>{{data.area}}</td>
+                <td>{{data.married}}</td>
+            </tr>
+        </tbody>
+</table>
+<table class="table table-hover table-inverse" *ngIf="data" >
+       <div>
+           <tr>
+               <th colspan="4">Survey 1 Question</th>
+               <th>Answer</th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th>Survey 2 Question</th>
+               <th>Answer</th>
+
+           </tr>
+            <tr>
+                    <td colspan="4" >Q1. मैं बहुत जल्दी थक जाता/जाती हूं </td>
+                    <td>{{data.SureveyDetails[0].question1}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आपको रोज़ की ज़िन्दगी में/ रोज़ के काम में ख़ुशी नहीं मिलती?</td>
+                    <td>{{data.Surevey2Details[0].q1}}</td>
+            </tr>
+
+            <tr>
+                    <td colspan="4" >Q2. मै अक्सर बीमार रहता/रहती हूं | </td>
+                    <td>{{data.SureveyDetails[0].question2}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आपको कभी लगता है कि टीबी के डर के कारण आपके पड़ोसी / रिश्तेदार आपसे बात करने को तैयार नहीं हैं?</td>
+                    <td>{{data.Surevey2Details[0].q2}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q3. मैं अपने स्वस्थ्य के बारें मैं बहुत परेशान रहता/रहती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question3}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आप इस डर के कारण लोगों से मिलने से बचते हैं कि आप टीबी फैला सकते हैं?</td>
+                    <td>{{data.Surevey2Details[0].q3}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q4. मुझे भूख कम लगती है  | </td>
+                    <td>{{data.SureveyDetails[0].question4}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आपको कभी लगता है कि आप अपने परिवार पर बोझ हैं या आप टीबी की वजह से कुछ हासिल नहीं कर पाएंगे?</td>
+                    <td>{{data.Surevey2Details[0].q4}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q5. मुझे कब्ज़ की शिकायत रहती हैं | </td>
+                    <td>{{data.SureveyDetails[0].question5}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आप लगातार ठीक न हो पाने की चिंता करते हैं?</td>
+                    <td>{{data.Surevey2Details[0].q5}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q6. मुझे अक्सर सिरदर्द रहता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question6}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आप ऐसी सोच व ख्याल रखते हैं जो अन्य लोगों को अजीब/असामान्य या विचित्र लगती हैं?</td>
+                    <td>{{data.Surevey2Details[0].q6}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q7. मुझे सर्दी जुकाम जल्दी हो जाता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question7}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आपको अजीब आवाजें सुनाई देती हैं या अजीब चीज़ें दिखती हैं जो अन्य लोग नहीं सुन/देख सकते हैं या नहीं सुनते/देखते हैं?</td>
+                    <td>{{data.Surevey2Details[0].q7}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q8. मुझे बार बार अपना गला साफ़ करना पड़ता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question8}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आप शराब का सेवन / धूम्रपान (सिगरेट , तंबाकू या अन्य हानिकारक दवा का दुरुपयोग) करते हैं?</td>
+                    <td>{{data.Surevey2Details[0].q8}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q9. मुझे प्रायः चक्कर आते हैं | </td>
+                    <td>{{data.SureveyDetails[0].question9}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>यदि हाँ, तो क्या आप इसे (पदार्थ) अक्सर बेहतर महसूस करने या तनाव कम करने के लिए उपयोग करते हैं?</td>
+                    <td>{{data.Surevey2Details[0].q9}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q10. मुझे बार बार पेशाब करने जाना पड़ता हैं| </td>
+                    <td>{{data.SureveyDetails[0].question10}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>क्या आपको इन समस्याओं के कारण रोज़ की ज़िन्दगी में परेशानी या मुश्किल लगती हैं?</td>
+                    <td>{{data.Surevey2Details[0].q10}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q11. मुझे नींद देर से आती हैं | </td>
+                    <td>{{data.SureveyDetails[0].question11}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>{{data.Surevey2Details[0].q1+data.Surevey2Details[0].q2+data.Surevey2Details[0].q3+data.Surevey2Details[0].q4+data.Surevey2Details[0].q5+data.Surevey2Details[0].q6+data.Surevey2Details[0].q7+data.Surevey2Details[0].q8+data.Surevey2Details[0].q9+data.Surevey2Details[0].q10}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q12. मेरी साँस फुल जाती हैं | </td>
+                    <td>{{data.SureveyDetails[0].question12}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q13. मेरा पेट अक्सर खराब रहता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question13}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q14. मेरा दिल अक्सर जोर-जोर से धड़कने लगता हैं  | </td>
+                    <td>{{data.SureveyDetails[0].question14}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q15. मेरे शरीर में दर्द होता हैं| </td>
+                    <td>{{data.SureveyDetails[0].question15}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q16. मेरी शौच में कीड़े निकलते हैं  | </td>
+                    <td>{{data.SureveyDetails[0].question16}}</td>
+                    <td>total</td>
+                    <td>{{data.SureveyDetails[0].question1+data.SureveyDetails[0].question2+data.SureveyDetails[0].question3+data.SureveyDetails[0].question4+data.SureveyDetails[0].question5+data.SureveyDetails[0].question6+data.SureveyDetails[0].question7+data.SureveyDetails[0].question8+data.SureveyDetails[0].question9+data.SureveyDetails[0].question10+data.SureveyDetails[0].question11+data.SureveyDetails[0].question12+data.SureveyDetails[0].question13+data.SureveyDetails[0].question14+data.SureveyDetails[0].question15+data.SureveyDetails[0].question16}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q17.मैं शर्मीले स्वभाव का/की हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question17}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q18. मैं बात का जल्दी बुरा मान जाता/जाती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question18}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q19.मैं छोटी-छोटी बातों से घबरा जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question19}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q20. मैं बहुत चिंता करता/करती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question20}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q21. मैं सामान्यतया: हर काम के लिए दूसरों की राय मांगता /मांगती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question21}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q22.मैं किसी बात का जल्दी फैसला नहीं कर पता/पाती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question22}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q23. मै थोड़ी सी नुक्ताचीनी (आलोचना) से बहुत परेशान हो जाता/जाती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question23}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q24. अगर काम जल्दी करना हो तो मैं घबरा जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question24}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q25. मैं जानबूझकर धीरे धीरे काम करता/करती हूँ ताकि काम गलत न हो जायें | </td>
+                    <td>{{data.SureveyDetails[0].question25}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q26. मैं नए लोगो से मिलने या नयी जगह जाने से घबड़ा जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question26}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q27. मैं अक्सर उदास रहता/रहती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question27}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q28.मैं जल्दी से रो पड़ता/पड़ती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question28}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q29. में निराशा में हताश हो जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question29}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q30. मैं जोर की आवाज से डर जाता/जाती हूँ  | </td>
+                    <td>{{data.SureveyDetails[0].question30}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q31. अचानक कोई मेरे सामने आ जायें तो मैं घबड़ा जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question31}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q32. किसी अफसर/बड़े आदमी के सामने मुझे पसीना आने लगता हैं  | </td>
+                    <td>{{data.SureveyDetails[0].question32}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q33.मैं शीघ्र चिड़चिड़ा जाता/जाती हूँ | </td>
+                    <td>{{data.SureveyDetails[0].question33}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q34. मुझे गुस्सा जल्दी आता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question34}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q35. मुझे अँधेरे से डर लगता हैं | </td>
+                    <td>{{data.SureveyDetails[0].question35}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q36. मुझे डरावने स्वप्न आते हैं  | </td>
+                    <td>{{data.SureveyDetails[0].question36}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q37. मुझे जिंदगी बेकार (फिजूल) लगती हैं  | </td>
+                    <td>{{data.SureveyDetails[0].question37}}</td>
+            </tr>
+            <tr>
+                    <td colspan="4" >Q38. ऐसी जिंदगी से तो मौत अच्छी हैं| </td>
+                    <td>{{data.SureveyDetails[0].question38}}</td>
+                    <td>total</td>
+                    <td>{{data.SureveyDetails[0].question17+data.SureveyDetails[0].question18+data.SureveyDetails[0].question19+data.SureveyDetails[0].question20+data.SureveyDetails[0].question21++data.SureveyDetails[0].question22+data.SureveyDetails[0].question23+data.SureveyDetails[0].question24+data.SureveyDetails[0].question25+data.SureveyDetails[0].question26+data.SureveyDetails[0].question27+data.SureveyDetails[0].question28+data.SureveyDetails[0].question29+data.SureveyDetails[0].question30+data.SureveyDetails[0].question31+data.SureveyDetails[0].question32+data.SureveyDetails[0].question33+data.SureveyDetails[0].question34+data.SureveyDetails[0].question35+data.SureveyDetails[0].question36+data.SureveyDetails[0].question37+data.SureveyDetails[0].question38}}</td>
+                    <td>Grand Total</td>
+                    <td>{{data.SureveyDetails[0].question1+data.SureveyDetails[0].question2+data.SureveyDetails[0].question3+data.SureveyDetails[0].question4+data.SureveyDetails[0].question5+data.SureveyDetails[0].question6+data.SureveyDetails[0].question7+data.SureveyDetails[0].question8+data.SureveyDetails[0].question9+data.SureveyDetails[0].question10+data.SureveyDetails[0].question11+data.SureveyDetails[0].question12+data.SureveyDetails[0].question13+data.SureveyDetails[0].question14+data.SureveyDetails[0].question15+data.SureveyDetails[0].question16+data.SureveyDetails[0].question17+data.SureveyDetails[0].question18+data.SureveyDetails[0].question19+data.SureveyDetails[0].question20+data.SureveyDetails[0].question21++data.SureveyDetails[0].question22+data.SureveyDetails[0].question23+data.SureveyDetails[0].question24+data.SureveyDetails[0].question25+data.SureveyDetails[0].question26+data.SureveyDetails[0].question27+data.SureveyDetails[0].question28+data.SureveyDetails[0].question29+data.SureveyDetails[0].question30+data.SureveyDetails[0].question31+data.SureveyDetails[0].question32+data.SureveyDetails[0].question33+data.SureveyDetails[0].question34+data.SureveyDetails[0].question35+data.SureveyDetails[0].question36+data.SureveyDetails[0].question37+data.SureveyDetails[0].question38}}</td>
+            </tr>
+       </div>
+    </table>
+    

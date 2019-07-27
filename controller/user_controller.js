@@ -143,3 +143,14 @@ exports.getFirstSurveyData=function(req,res){
         }
     })
 }
+exports.getdatabyID=function(req,res){
+    var data=req.body;
+    console.log(data)
+    User.findById(data.id).populate('SureveyDetails').populate('Surevey2Details').exec(function(err,user){
+        if(!err && user){
+            res.send(user)
+        }else{
+            console.log(err)
+        }
+    })
+}

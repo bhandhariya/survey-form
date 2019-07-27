@@ -19,6 +19,6 @@ router.get('/getCount',UserCOntroller.getCount);
 
 router.get('/getFirstSurveyData',UserCOntroller.getFirstSurveyData);
 
-
+router.post('/getdatabuID',UserCOntroller.getdatabyID);
 
 module.exports = router;
