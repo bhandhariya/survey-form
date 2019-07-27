@@ -15,4 +15,10 @@ router.post('/survey2',UserCOntroller.survey2);
 
 router.get('/getAllUSers',UserCOntroller.getAllUSers);
 
+router.get('/getCount',UserCOntroller.getCount);
+
+router.get('/getFirstSurveyData',UserCOntroller.getFirstSurveyData);
+
+
+
 module.exports = router;

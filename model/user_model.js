@@ -13,7 +13,8 @@ var UserSchema = new Schema({
     education:{type:Schema.Types.String},
     profession:{type:Schema.Types.String},
     married:{type:Schema.Types.String},
-    area:{type:Schema.Types.String}
+    area:{type:Schema.Types.String},
+    createdAt:{type:Schema.Types.Date}
 
 },{
     toJSON:{virtuals:true},

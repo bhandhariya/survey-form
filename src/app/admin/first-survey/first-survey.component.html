@@ -1,0 +1,24 @@
+<table class="table table-hover table-inverse" *ngIf="Survey1Details" >
+    <thead class="thead-inverse">
+        <tr>
+            <th>name</th>
+            <th>Part A</th>
+            <th>Part B</th>
+            <th>total</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of Survey1Details">
+                <td scope="row"><div *ngFor="let ii of i.userDetails" >{{ii.name}}</div></td>
+                <td>
+                
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td scope="row"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+</table>

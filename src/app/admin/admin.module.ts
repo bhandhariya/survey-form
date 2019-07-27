@@ -7,16 +7,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { LoginService } from './service/login.service';
 import { UserComponent } from './user/user.component';
+import { FirstSurveyComponent } from './first-survey/first-survey.component';
 
 const AppRoutes: Routes = [
   { path : '', component : AdminComponent },
   { path : 'home', component : HomeComponent,canActivate:[LoginService] },
   { path : 'user', component : UserComponent,canActivate:[LoginService] },
+  { path : 'first', component : FirstSurveyComponent,canActivate:[LoginService] },
   { path : '**', redirectTo :'', pathMatch : 'full'}
 ];
 
 @NgModule({
-  declarations: [AdminComponent, HomeComponent, UserComponent],
+  declarations: [AdminComponent, HomeComponent, UserComponent,FirstSurveyComponent],
   imports: [
     CommonModule,FormsModule,HttpClientModule,ReactiveFormsModule,
     RouterModule.forChild(AppRoutes)

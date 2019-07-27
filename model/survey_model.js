@@ -44,8 +44,18 @@ var SurveySchema = new Schema({
     question37: {type:Schema.Types.Number},
     question38: {type:Schema.Types.Number}
 
+},{
+    toJSON:{virtuals:true},
+    toObject:{virtuals:true}
 });
 
+SurveySchema.virtual('userDetails',{
+
+    ref:'User',
+    localField: 'user_id',
+    foreignField: '_id',
+    justOne: false
+})
 
 
 

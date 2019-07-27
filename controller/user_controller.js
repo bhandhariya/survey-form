@@ -17,7 +17,8 @@ exports.create=function(req,res){
         education:data.education,
         profession:data.profession,
         married:data.maried,
-        area:data.area
+        area:data.area,
+        createdAt:Date.now()
     })
     user.save(function(err,result){
         if(!err && result){
@@ -116,6 +117,29 @@ exports.getAllUSers=function(req,res){
             res.send(user)
         }else{
             console.log(err)
+        }
+    })
+}
+
+exports.getCount=function(req,res){
+   User.count().exec( function(err, c) {
+    Survey.count().exec(function(errr,sc){
+        Survey2.count().exec(function(errrr,sc2){
+            res.send({
+                user:c,
+                s1:sc,
+                s2:sc2
+            })
+        })
+    })
+})
+    
+}
+
+exports.getFirstSurveyData=function(req,res){
+    Survey.find().populate('userDetails').exec(function(err,result){
+        if(!err && result){
+            res.send(result)
         }
     })
 }

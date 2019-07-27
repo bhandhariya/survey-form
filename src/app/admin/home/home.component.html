@@ -42,14 +42,14 @@
 							<div class="panel-heading">
 							  <h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-								Files</a>
+								Users and Survey</a>
 							  </h4>
 							</div>
 							<div id="collapse1" class="panel-collapse collapse in">
 								<ul class="list-group">
-									<li class="list-group-item"><span class="badge">253</span> New</li>
-									<li class="list-group-item"><span class="badge">17</span> Deleted</li>
-									<li class="list-group-item" (click)="gotoAllUsers()"  ><span class="badge">3</span>All Survey Users</li>
+									<li class="list-group-item" (click)="gotoFirstSurvey()" ><span class="badge">{{SurveyCount1}}</span> First Survey</li>
+									<li class="list-group-item"><span class="badge">{{SurveyCount2}}</span>Second Survey</li>
+									<li class="list-group-item" (click)="gotoAllUsers()"  ><span class="badge">{{UserCount}}</span>All Survey Users</li>
 								</ul>
 							</div>
 						  </div>
