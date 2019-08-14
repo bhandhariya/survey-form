@@ -157,6 +157,7 @@ exports.getdatabyID=function(req,res){
 
 exports.deleteUserById=function(req,res){
     console.log(req.body);
+    // res.send({value:"raja"})
     User.findByIdAndRemove(req.body.id).exec(function(err,doc){
         if(!err && doc){
             res.send(doc)

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-user',
@@ -55,9 +56,51 @@ getsecondSureyDetails(r){
 }
 UserDelete(id){
   console.log(id);
-  this.http.post('https://form112.herokuapp.com/api/user/deleteUserById',{id:id}).subscribe(r=>{
-    console.log(r);
-    this.getAllUsersData()
+  // this.http.post('https://form112.herokuapp.com/api/user/deleteUserById',{id:id}).subscribe(r=>{
+  //   console.log(r);
+  //   this.getAllUsersData()
+  // })
+
+  Swal.fire({
+    title: 'If you really Want to delete this please provide authentication token',
+    input: 'text',
+    inputAttributes: {
+      autocapitalize: 'off'
+    },
+    showCancelButton: true,
+    confirmButtonText: 'Look up',
+    showLoaderOnConfirm: true,
+    preConfirm: (login) => {
+     if(login=="JasJeet"){
+      this.http.post('https://form112.herokuapp.com/api/user/deleteUserById',{id:id}).subscribe(this.cbb)
+     }else{
+       var r={
+         value:'You are not aurthorised'
+       }
+       return r;
+     }
+    },
+    allowOutsideClick: () => !Swal.isLoading()
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire({
+        title: result.value.value
+        
+      })
+      console.log(result)
+    }else{
+      Swal.fire({
+        title: 'Deleted Successfully'
+        
+      })
+    }
+  })
+
+}
+cbb=(r)=>{
+  Swal.fire({
+    title: 'Deleted Successfully'
+    
   })
 }
 }
