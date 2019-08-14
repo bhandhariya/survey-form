@@ -53,4 +53,11 @@ getsecondSureyDetails(r){
   return i;
   }
 }
+UserDelete(id){
+  console.log(id);
+  this.http.post('https://form112.herokuapp.com/api/user/deleteUserById',{id:id}).subscribe(r=>{
+    console.log(r);
+    this.getAllUsersData()
+  })
+}
 }

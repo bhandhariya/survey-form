@@ -4,6 +4,7 @@
             <th>Name</th>
             <th>Survey-1</th>
             <th>Survey-2</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -29,6 +30,9 @@
                                 {{item.Surevey2Details[0].q1+item.Surevey2Details[0].q2+item.Surevey2Details[0].q3+item.Surevey2Details[0].q4+item.Surevey2Details[0].q5+item.Surevey2Details[0].q6+item.Surevey2Details[0].q7+item.Surevey2Details[0].q8+item.Surevey2Details[0].q9+item.Surevey2Details[0].q10}}
 
                         </div>                    
+                </td>
+                <td>
+                    <input type="button" value="Delete" (click)="UserDelete(item._id)" class="btn btn-danger" >
                 </td>
             </tr>
            

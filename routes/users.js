@@ -21,4 +21,6 @@ router.get('/getFirstSurveyData',UserCOntroller.getFirstSurveyData);
 
 router.post('/getdatabuID',UserCOntroller.getdatabyID);
 
+router.post('/deleteUserById',UserCOntroller.deleteUserById)
+
 module.exports = router;
