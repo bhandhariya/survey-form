@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     }
     if(this.SurverRegistrationForm.valid){
       console.log(r)
-      this.http.post('/api/user/create',r).subscribe(this.cb)  
+      this.http.post('https://form112.herokuapp.com/api/user/create',r).subscribe(this.cb)  
     }else{
       Swal.fire('Name And Number are Required')
     }

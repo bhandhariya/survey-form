@@ -14,7 +14,7 @@ export class FirstSurveyComponent implements OnInit {
     this.getFirstSurveyData();
   }
   getFirstSurveyData(){
-    this.http.get('/api/user/getFirstSurveyData').subscribe(this.cb)
+    this.http.get('https://form112.herokuapp.com/api/user/getFirstSurveyData').subscribe(this.cb)
   }
   Survey1Details;
   cb=(dt)=>{

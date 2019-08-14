@@ -459,7 +459,7 @@ export class SurveyComponent implements OnInit {
     survey.onComplete.add((sender,options)=>{
       console.log(sender.data);
       console.log(options)
-      this.http.post('/api/user/firstsurvey',{data:sender.data,uid:this.userID}).subscribe(this.firstSurveyCall)
+      this.http.post('https://form112.herokuapp.com/api/user/firstsurvey',{data:sender.data,uid:this.userID}).subscribe(this.firstSurveyCall)
     })
     Survey.SurveyNG.render("surveyElement", {model:survey});
     

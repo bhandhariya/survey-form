@@ -15,7 +15,7 @@ export class UserComponent implements OnInit {
     this.getAllUsersData()
   }
 getAllUsersData(){
-  this.http.get('/api/user/getAllUSers').subscribe(this.cb)
+  this.http.get('https://form112.herokuapp.com/api/user/getAllUSers').subscribe(this.cb)
 }
 cb=(dt)=>{
   console.log(dt)

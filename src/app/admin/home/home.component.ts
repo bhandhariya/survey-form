@@ -24,7 +24,7 @@ this.router.navigateByUrl('admin/user')
     this.router.navigateByUrl('admin/first')
   }
 getSurveyCount(){
-  this.http.get('/api/user/getCount').subscribe(this.cb)
+  this.http.get('https://form112.herokuapp.com/api/user/getCount').subscribe(this.cb)
 }
 UserCount;
 SurveyCount1;

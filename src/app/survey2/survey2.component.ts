@@ -41,7 +41,7 @@ export class Survey2Component implements OnInit {
    if(this.Survey2Form.valid){
     r.uid=this.UID;
     console.log(r)
-   this.http.post('/api/user/survey2',r).subscribe(this.cb) 
+   this.http.post('https://form112.herokuapp.com/api/user/survey2',r).subscribe(this.cb) 
    }
   }
   cb=(dt)=>{

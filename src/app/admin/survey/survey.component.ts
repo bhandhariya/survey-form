@@ -22,7 +22,7 @@ uid;data;
     var obj={
       id:r
     }
-    this.http.post('/api/user/getdatabuID',obj).subscribe(this.cb)
+    this.http.post('https://form112.herokuapp.com/api/user/getdatabuID',obj).subscribe(this.cb)
     }
     cb=(dt)=>{
       console.log(dt);
