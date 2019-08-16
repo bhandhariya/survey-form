@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import * as saveAs from "file-saver";
+import * as jsonexport from "jsonexport/dist"
 
 @Component({
   selector: 'app-home',
@@ -35,5 +37,17 @@ cb=(dt)=>{
   this.SurveyCount1=dt.s1;
   this.SurveyCount2=dt.s2
 
+}
+download(){
+  this.http.get('https://form112.herokuapp.com/api/user/getAllUSers').subscribe(this.excelcb)
+ 
+}
+excelcb=(dt)=>{
+  console.log(dt)
+  jsonexport(dt,{verticalOutput:false},function(err, csv){
+    if(err) return console.log(err);
+    saveAs(new Blob([csv],{type:'text/json'}),'datdaata.csv')
+    
+});
 }
 }
